@@ -1,0 +1,8 @@
+# Xcode
+xcuserdata
+*.xccheckout
+DerivedData
+*.xccheckout
+*.xcscheme
+*.xcuserstate
+xcschememanagement.plist
