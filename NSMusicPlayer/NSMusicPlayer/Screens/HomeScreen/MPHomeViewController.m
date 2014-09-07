@@ -7,6 +7,7 @@
 //
 
 #import "MPHomeViewController.h"
+#import "MPYoutubeViewController.h"
 #import <AVFoundation/AVAudioPlayer.h>
 
 @interface MPHomeViewController ()
@@ -31,9 +32,8 @@
 {
     [super viewDidLoad];
     
-    AVAudioSession* audioSession = [AVAudioSession sharedInstance];
-    [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
-    [audioSession setActive:YES error:nil];
+    self.title = @"NSMusicPlayer";
+    
     self.songPath = [[NSBundle mainBundle] pathForResource:@"manam"
                                                     ofType:@"mp3"];
     NSURL* audioFileURL = [NSURL fileURLWithPath:self.songPath];
@@ -63,6 +63,12 @@
     }
     
     playButton.selected = !playButton.isSelected;
+}
+
+- (IBAction)youtubeButtonAction:(id)sender
+{
+    MPYoutubeViewController* youtubeVC = [[MPYoutubeViewController alloc] init];
+    [self.navigationController pushViewController:youtubeVC animated:YES];
 }
 
 @end

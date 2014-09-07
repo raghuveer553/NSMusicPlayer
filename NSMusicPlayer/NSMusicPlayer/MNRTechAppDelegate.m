@@ -19,9 +19,19 @@
     UINavigationController* navC = [[UINavigationController alloc] initWithRootViewController:homeVC];
     self.window.rootViewController = navC;
     
+    [self setupMusicPlayerSettings];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)setupMusicPlayerSettings
+{
+    AVAudioSession* audioSession = [AVAudioSession sharedInstance];
+    [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [audioSession setActive:YES error:nil];
+ 
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

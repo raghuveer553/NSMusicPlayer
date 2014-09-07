@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011812A919BC0EA4004FC6A1 /* MPYoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011812A719BC0EA4004FC6A1 /* MPYoutubeViewController.m */; };
+		011812AA19BC0EA4004FC6A1 /* MPYoutubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011812A819BC0EA4004FC6A1 /* MPYoutubeViewController.xib */; };
 		01D81ED019BAFFB60054AEAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D81ECF19BAFFB60054AEAA /* Foundation.framework */; };
 		01D81ED219BAFFB60054AEAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D81ED119BAFFB60054AEAA /* CoreGraphics.framework */; };
 		01D81ED419BAFFB60054AEAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D81ED319BAFFB60054AEAA /* UIKit.framework */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011812A619BC0EA4004FC6A1 /* MPYoutubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPYoutubeViewController.h; sourceTree = "<group>"; };
+		011812A719BC0EA4004FC6A1 /* MPYoutubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPYoutubeViewController.m; sourceTree = "<group>"; };
+		011812A819BC0EA4004FC6A1 /* MPYoutubeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPYoutubeViewController.xib; sourceTree = "<group>"; };
 		01D81ECC19BAFFB60054AEAA /* NSMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D81ECF19BAFFB60054AEAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		01D81ED119BAFFB60054AEAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011812A519BC0E82004FC6A1 /* YoutubeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				011812A619BC0EA4004FC6A1 /* MPYoutubeViewController.h */,
+				011812A719BC0EA4004FC6A1 /* MPYoutubeViewController.m */,
+				011812A819BC0EA4004FC6A1 /* MPYoutubeViewController.xib */,
+			);
+			path = YoutubeScreen;
+			sourceTree = "<group>";
+		};
 		01D81EC319BAFFB50054AEAA = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				01D81EFF19BB00F20054AEAA /* HomeScreen */,
+				011812A519BC0E82004FC6A1 /* YoutubeScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -255,6 +271,7 @@
 				01D81EDA19BAFFB60054AEAA /* InfoPlist.strings in Resources */,
 				01D81EE219BAFFB60054AEAA /* Images.xcassets in Resources */,
 				01D81F0419BB01320054AEAA /* MPHomeViewController.xib in Resources */,
+				011812AA19BC0EA4004FC6A1 /* MPYoutubeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D81EE019BAFFB60054AEAA /* MNRTechAppDelegate.m in Sources */,
+				011812A919BC0EA4004FC6A1 /* MPYoutubeViewController.m in Sources */,
 				01D81F0319BB01320054AEAA /* MPHomeViewController.m in Sources */,
 				01D81EDC19BAFFB60054AEAA /* main.m in Sources */,
 			);
@@ -478,6 +496,7 @@
 				01D81EFA19BAFFB60054AEAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01D81EFB19BAFFB60054AEAA /* Build configuration list for PBXNativeTarget "NSMusicPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +505,7 @@
 				01D81EFD19BAFFB60054AEAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
